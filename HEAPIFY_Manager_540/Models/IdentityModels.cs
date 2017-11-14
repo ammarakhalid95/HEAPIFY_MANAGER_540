@@ -21,7 +21,7 @@ namespace HEAPIFY_Manager_540.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("HEAPConnection", throwIfV1Schema: false)
         {
         }
 

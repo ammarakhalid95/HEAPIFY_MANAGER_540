@@ -95,8 +95,9 @@ hr {
 }
 
 mark {
-  color: #000;
-  background: #ff0;
+    color: #000;
+    /*background: #ff0;*/
+    background: #551a8b;
 }
 
 code,
@@ -311,11 +312,12 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    /*color: #333333;*/
+    color: #551A8B;
+    background-color: #ffffff;
 }
 
 input,
@@ -4556,10 +4558,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #ffffff;
 }
 
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-  border-color: #101010;
-}
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        /*border-color: #101010;*/
+        border-color: #551A8B;
+    }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,

@@ -53,6 +53,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -190,14 +192,193 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountsAdminsController.cs" />
+    <Compile Include="Controllers\AccountTypesController.cs" />
+    <Compile Include="Controllers\ActiveSStandingsController.cs" />
+    <Compile Include="Controllers\AddLabReportsController.cs" />
+    <Compile Include="Controllers\AddressesController.cs" />
+    <Compile Include="Controllers\AlchoholStandingsController.cs" />
+    <Compile Include="Controllers\AllergiesNamesController.cs" />
+    <Compile Include="Controllers\AllergyTypesController.cs" />
+    <Compile Include="Controllers\BillingsController.cs" />
+    <Compile Include="Controllers\CreateOrderInternalsController.cs" />
+    <Compile Include="Controllers\DemographicsController.cs" />
+    <Compile Include="Controllers\DrugAbusesController.cs" />
+    <Compile Include="Controllers\DrugsController.cs" />
+    <Compile Include="Controllers\EmergencyContactsController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\EthnicitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImmunizationsController.cs" />
+    <Compile Include="Controllers\InsurancesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MaritalStandingsController.cs" />
+    <Compile Include="Controllers\ModifiesController.cs" />
+    <Compile Include="Controllers\NotesMedicalStaffsController.cs" />
+    <Compile Include="Controllers\OccupationsController.cs" />
+    <Compile Include="Controllers\PatientAllergiesController.cs" />
+    <Compile Include="Controllers\PatientDrugsController.cs" />
+    <Compile Include="Controllers\PatientImmunizationsController.cs" />
+    <Compile Include="Controllers\PatientInsurancesController.cs" />
+    <Compile Include="Controllers\PatientProblemsController.cs" />
+    <Compile Include="Controllers\PatientsController.cs" />
+    <Compile Include="Controllers\PhoneNumbersController.cs" />
+    <Compile Include="Controllers\PhoneTypesController.cs" />
+    <Compile Include="Controllers\ProblemsController.cs" />
+    <Compile Include="Controllers\RacesController.cs" />
+    <Compile Include="Controllers\RelationshipsController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\SmokingStandingsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\VitalsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountsAdmin.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountType.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ActiveSStanding.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddLabReport.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Address.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlchoholStanding.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AllergiesName.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AllergyType.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Billing.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CreateOrderInternal.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Demographic.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Drug.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugAbuse.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EmergencyContact.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ethnicity.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FamilyHistoryMedical.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HEAPIFY_Manager_540Context.cs" />
+    <Compile Include="Models\HEAPModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HEAPModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HEAPModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HEAPModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HEAPModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Immunization.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Insurance.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MaritalStanding.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Modify.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NotesMedicalStaff.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Occupation.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Patient.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientAllergy.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientDrug.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientEmergencyContact.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientImmunization.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientInsurance.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatientProblem.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhoneNumber.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhoneType.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Problem.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Race.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Relationship.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmokingStanding.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Vital.cs">
+      <DependentUpon>HEAPModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -208,10 +389,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\HEAPModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HEAPModel.edmx</DependentUpon>
+      <LastGenOutput>HEAPModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HEAPModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HEAPModel.edmx</DependentUpon>
+      <LastGenOutput>HEAPModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\HEAPModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HEAPModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\HEAPModel.edmx.diagram">
+      <DependentUpon>HEAPModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -258,9 +456,188 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Roles\Create.cshtml" />
+    <Content Include="Views\Problems\Create.cshtml" />
+    <Content Include="Views\Problems\Delete.cshtml" />
+    <Content Include="Views\Problems\Details.cshtml" />
+    <Content Include="Views\Problems\Edit.cshtml" />
+    <Content Include="Views\Problems\Index.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\AccountTypes\Create.cshtml" />
+    <Content Include="Views\AccountTypes\Delete.cshtml" />
+    <Content Include="Views\AccountTypes\Details.cshtml" />
+    <Content Include="Views\AccountTypes\Edit.cshtml" />
+    <Content Include="Views\AccountTypes\Index.cshtml" />
+    <Content Include="Views\AccountsAdmins\Create.cshtml" />
+    <Content Include="Views\AccountsAdmins\Delete.cshtml" />
+    <Content Include="Views\AccountsAdmins\Details.cshtml" />
+    <Content Include="Views\AccountsAdmins\Edit.cshtml" />
+    <Content Include="Views\AccountsAdmins\Index.cshtml" />
+    <Content Include="Views\ActiveSStandings\Create.cshtml" />
+    <Content Include="Views\ActiveSStandings\Delete.cshtml" />
+    <Content Include="Views\ActiveSStandings\Details.cshtml" />
+    <Content Include="Views\ActiveSStandings\Edit.cshtml" />
+    <Content Include="Views\ActiveSStandings\Index.cshtml" />
+    <Content Include="Views\AddLabReports\Create.cshtml" />
+    <Content Include="Views\AddLabReports\Delete.cshtml" />
+    <Content Include="Views\AddLabReports\Details.cshtml" />
+    <Content Include="Views\AddLabReports\Edit.cshtml" />
+    <Content Include="Views\AddLabReports\Index.cshtml" />
+    <Content Include="Views\Addresses\Create.cshtml" />
+    <Content Include="Views\Addresses\Delete.cshtml" />
+    <Content Include="Views\Addresses\Details.cshtml" />
+    <Content Include="Views\Addresses\Edit.cshtml" />
+    <Content Include="Views\Addresses\Index.cshtml" />
+    <Content Include="Views\AlchoholStandings\Create.cshtml" />
+    <Content Include="Views\AlchoholStandings\Delete.cshtml" />
+    <Content Include="Views\AlchoholStandings\Details.cshtml" />
+    <Content Include="Views\AlchoholStandings\Edit.cshtml" />
+    <Content Include="Views\AlchoholStandings\Index.cshtml" />
+    <Content Include="Views\AllergiesNames\Create.cshtml" />
+    <Content Include="Views\AllergiesNames\Delete.cshtml" />
+    <Content Include="Views\AllergiesNames\Details.cshtml" />
+    <Content Include="Views\AllergiesNames\Edit.cshtml" />
+    <Content Include="Views\AllergiesNames\Index.cshtml" />
+    <Content Include="Views\AllergyTypes\Create.cshtml" />
+    <Content Include="Views\AllergyTypes\Delete.cshtml" />
+    <Content Include="Views\AllergyTypes\Details.cshtml" />
+    <Content Include="Views\AllergyTypes\Edit.cshtml" />
+    <Content Include="Views\AllergyTypes\Index.cshtml" />
+    <Content Include="Views\Billings\Create.cshtml" />
+    <Content Include="Views\Billings\Delete.cshtml" />
+    <Content Include="Views\Billings\Details.cshtml" />
+    <Content Include="Views\Billings\Edit.cshtml" />
+    <Content Include="Views\Billings\Index.cshtml" />
+    <Content Include="Views\CreateOrderInternals\Create.cshtml" />
+    <Content Include="Views\CreateOrderInternals\Delete.cshtml" />
+    <Content Include="Views\CreateOrderInternals\Details.cshtml" />
+    <Content Include="Views\CreateOrderInternals\Edit.cshtml" />
+    <Content Include="Views\CreateOrderInternals\Index.cshtml" />
+    <Content Include="Views\Demographics\Create.cshtml" />
+    <Content Include="Views\Demographics\Delete.cshtml" />
+    <Content Include="Views\Demographics\Details.cshtml" />
+    <Content Include="Views\Demographics\Edit.cshtml" />
+    <Content Include="Views\Demographics\Index.cshtml" />
+    <Content Include="Views\Drugs\Create.cshtml" />
+    <Content Include="Views\Drugs\Delete.cshtml" />
+    <Content Include="Views\Drugs\Details.cshtml" />
+    <Content Include="Views\Drugs\Edit.cshtml" />
+    <Content Include="Views\Drugs\Index.cshtml" />
+    <Content Include="Views\DrugAbuses\Create.cshtml" />
+    <Content Include="Views\DrugAbuses\Delete.cshtml" />
+    <Content Include="Views\DrugAbuses\Details.cshtml" />
+    <Content Include="Views\DrugAbuses\Edit.cshtml" />
+    <Content Include="Views\DrugAbuses\Index.cshtml" />
+    <Content Include="Views\EmergencyContacts\Create.cshtml" />
+    <Content Include="Views\EmergencyContacts\Delete.cshtml" />
+    <Content Include="Views\EmergencyContacts\Details.cshtml" />
+    <Content Include="Views\EmergencyContacts\Edit.cshtml" />
+    <Content Include="Views\EmergencyContacts\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Ethnicities\Create.cshtml" />
+    <Content Include="Views\Ethnicities\Delete.cshtml" />
+    <Content Include="Views\Ethnicities\Details.cshtml" />
+    <Content Include="Views\Ethnicities\Edit.cshtml" />
+    <Content Include="Views\Ethnicities\Index.cshtml" />
+    <Content Include="Views\Immunizations\Create.cshtml" />
+    <Content Include="Views\Immunizations\Delete.cshtml" />
+    <Content Include="Views\Immunizations\Details.cshtml" />
+    <Content Include="Views\Immunizations\Edit.cshtml" />
+    <Content Include="Views\Immunizations\Index.cshtml" />
+    <Content Include="Views\Insurances\Create.cshtml" />
+    <Content Include="Views\Insurances\Delete.cshtml" />
+    <Content Include="Views\Insurances\Details.cshtml" />
+    <Content Include="Views\Insurances\Edit.cshtml" />
+    <Content Include="Views\Insurances\Index.cshtml" />
+    <Content Include="Views\MaritalStandings\Create.cshtml" />
+    <Content Include="Views\MaritalStandings\Delete.cshtml" />
+    <Content Include="Views\MaritalStandings\Details.cshtml" />
+    <Content Include="Views\MaritalStandings\Edit.cshtml" />
+    <Content Include="Views\MaritalStandings\Index.cshtml" />
+    <Content Include="Views\Modifies\Create.cshtml" />
+    <Content Include="Views\Modifies\Delete.cshtml" />
+    <Content Include="Views\Modifies\Details.cshtml" />
+    <Content Include="Views\Modifies\Edit.cshtml" />
+    <Content Include="Views\Modifies\Index.cshtml" />
+    <Content Include="Views\NotesMedicalStaffs\Create.cshtml" />
+    <Content Include="Views\NotesMedicalStaffs\Delete.cshtml" />
+    <Content Include="Views\NotesMedicalStaffs\Details.cshtml" />
+    <Content Include="Views\NotesMedicalStaffs\Edit.cshtml" />
+    <Content Include="Views\NotesMedicalStaffs\Index.cshtml" />
+    <Content Include="Views\Occupations\Create.cshtml" />
+    <Content Include="Views\Occupations\Delete.cshtml" />
+    <Content Include="Views\Occupations\Details.cshtml" />
+    <Content Include="Views\Occupations\Edit.cshtml" />
+    <Content Include="Views\Occupations\Index.cshtml" />
+    <Content Include="Views\Patients\Create.cshtml" />
+    <Content Include="Views\Patients\Delete.cshtml" />
+    <Content Include="Views\Patients\Details.cshtml" />
+    <Content Include="Views\Patients\Edit.cshtml" />
+    <Content Include="Views\Patients\Index.cshtml" />
+    <Content Include="Views\PatientAllergies\Create.cshtml" />
+    <Content Include="Views\PatientAllergies\Delete.cshtml" />
+    <Content Include="Views\PatientAllergies\Details.cshtml" />
+    <Content Include="Views\PatientAllergies\Edit.cshtml" />
+    <Content Include="Views\PatientAllergies\Index.cshtml" />
+    <Content Include="Views\PatientDrugs\Create.cshtml" />
+    <Content Include="Views\PatientDrugs\Delete.cshtml" />
+    <Content Include="Views\PatientDrugs\Details.cshtml" />
+    <Content Include="Views\PatientDrugs\Edit.cshtml" />
+    <Content Include="Views\PatientDrugs\Index.cshtml" />
+    <Content Include="Views\PatientImmunizations\Create.cshtml" />
+    <Content Include="Views\PatientImmunizations\Delete.cshtml" />
+    <Content Include="Views\PatientImmunizations\Details.cshtml" />
+    <Content Include="Views\PatientImmunizations\Edit.cshtml" />
+    <Content Include="Views\PatientImmunizations\Index.cshtml" />
+    <Content Include="Views\PatientInsurances\Create.cshtml" />
+    <Content Include="Views\PatientInsurances\Delete.cshtml" />
+    <Content Include="Views\PatientInsurances\Details.cshtml" />
+    <Content Include="Views\PatientInsurances\Edit.cshtml" />
+    <Content Include="Views\PatientInsurances\Index.cshtml" />
+    <Content Include="Views\PatientProblems\Create.cshtml" />
+    <Content Include="Views\PatientProblems\Delete.cshtml" />
+    <Content Include="Views\PatientProblems\Details.cshtml" />
+    <Content Include="Views\PatientProblems\Edit.cshtml" />
+    <Content Include="Views\PatientProblems\Index.cshtml" />
+    <Content Include="Views\PhoneNumbers\Create.cshtml" />
+    <Content Include="Views\PhoneNumbers\Delete.cshtml" />
+    <Content Include="Views\PhoneNumbers\Details.cshtml" />
+    <Content Include="Views\PhoneNumbers\Edit.cshtml" />
+    <Content Include="Views\PhoneNumbers\Index.cshtml" />
+    <Content Include="Views\PhoneTypes\Create.cshtml" />
+    <Content Include="Views\PhoneTypes\Delete.cshtml" />
+    <Content Include="Views\PhoneTypes\Details.cshtml" />
+    <Content Include="Views\PhoneTypes\Edit.cshtml" />
+    <Content Include="Views\PhoneTypes\Index.cshtml" />
+    <Content Include="Views\Races\Create.cshtml" />
+    <Content Include="Views\Races\Delete.cshtml" />
+    <Content Include="Views\Races\Details.cshtml" />
+    <Content Include="Views\Races\Edit.cshtml" />
+    <Content Include="Views\Races\Index.cshtml" />
+    <Content Include="Views\Relationships\Create.cshtml" />
+    <Content Include="Views\Relationships\Delete.cshtml" />
+    <Content Include="Views\Relationships\Details.cshtml" />
+    <Content Include="Views\Relationships\Edit.cshtml" />
+    <Content Include="Views\Relationships\Index.cshtml" />
+    <Content Include="Views\SmokingStandings\Create.cshtml" />
+    <Content Include="Views\SmokingStandings\Delete.cshtml" />
+    <Content Include="Views\SmokingStandings\Details.cshtml" />
+    <Content Include="Views\SmokingStandings\Edit.cshtml" />
+    <Content Include="Views\SmokingStandings\Index.cshtml" />
+    <Content Include="Views\Vitals\Create.cshtml" />
+    <Content Include="Views\Vitals\Delete.cshtml" />
+    <Content Include="Views\Vitals\Details.cshtml" />
+    <Content Include="Views\Vitals\Edit.cshtml" />
+    <Content Include="Views\Vitals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -274,6 +651,9 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

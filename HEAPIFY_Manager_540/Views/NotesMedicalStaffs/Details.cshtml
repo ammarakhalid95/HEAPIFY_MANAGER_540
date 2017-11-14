@@ -1,0 +1,50 @@
+﻿@model HEAPIFY_Manager_540.Models.NotesMedicalStaff
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NotesMedicalStaff</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NotesID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NotesID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Time_Recorded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Time_Recorded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

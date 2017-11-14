@@ -1,0 +1,106 @@
+﻿@model HEAPIFY_Manager_540.Models.Billing
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Billing</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Insurance.InsuranceName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Insurance.InsuranceName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Payment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Payment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdjustmentCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdjustmentCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adjustment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adjustment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentMode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentMode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatePaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatePaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaidBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaidBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BillingID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

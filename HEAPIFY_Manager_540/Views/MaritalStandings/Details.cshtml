@@ -1,0 +1,34 @@
+﻿@model HEAPIFY_Manager_540.Models.MaritalStanding
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MaritalStanding</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaritalStatusID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaritalStatusID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaritalStatusType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaritalStatusType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
