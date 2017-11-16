@@ -138,7 +138,7 @@ namespace HEAPIFY_Manager_540.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+        [Authorize(Roles = "IT Administrator")]
         public ActionResult Register()
         {
             ViewBag.Name = new SelectList(context.Roles.Where(u => !u.Name.Contains("IT Administrator"))
@@ -149,7 +149,7 @@ namespace HEAPIFY_Manager_540.Controllers
         //
         // POST: /Account/Register   
         [HttpPost]
-        [AllowAnonymous]
+        [Authorize(Roles = "IT Administrator")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
