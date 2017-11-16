@@ -213,7 +213,6 @@
     <Compile Include="Controllers\InsurancesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MaritalStandingsController.cs" />
-    <Compile Include="Controllers\MedicalAdminController.cs" />
     <Compile Include="Controllers\ModifiesController.cs" />
     <Compile Include="Controllers\NotesMedicalStaffsController.cs" />
     <Compile Include="Controllers\OccupationsController.cs" />
@@ -230,10 +229,18 @@
     <Compile Include="Controllers\RelationshipsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\SmokingStandingsController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\VitalsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalMasterPage.Master.cs">
+      <DependentUpon>MedicalMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicalMasterPage.Master.designer.cs">
+      <DependentUpon>MedicalMasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountsAdmin.cs">
       <DependentUpon>HEAPModel.tt</DependentUpon>
@@ -382,6 +389,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Views\Shared\MainMenu.Master.cs">
+      <DependentUpon>MainMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\MainMenu.Master.designer.cs">
+      <DependentUpon>MainMenu.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -412,6 +426,7 @@
     <Content Include="Models\HEAPModel.edmx.diagram">
       <DependentUpon>HEAPModel.edmx</DependentUpon>
     </Content>
+    <Content Include="MedicalMasterPage.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -635,10 +650,12 @@
     <Content Include="Views\Vitals\Details.cshtml" />
     <Content Include="Views\Vitals\Edit.cshtml" />
     <Content Include="Views\Vitals\Index.cshtml" />
-    <Content Include="Views\MedicalAdmin\Index.cshtml" />
+    <Content Include="Views\Shared\MainMenu.Master" />
+    <Content Include="Views\Shared\SideMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Test\" />
     <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>

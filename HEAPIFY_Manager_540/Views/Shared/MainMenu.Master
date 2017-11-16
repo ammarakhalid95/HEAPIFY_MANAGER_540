@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMenu.master.cs" Inherits="HEAPIFY_Manager_540.Views.Shared.MainMenu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <p>
+            <asp:Label ID="MedicalLabel" runat="server" Text="Medical"></asp:Label>
+        </p>
+        <p>
+            <asp:LinkButton ID="AdminButton" runat="server">Administrative</asp:LinkButton>
+        </p>
+        <p>
+            <asp:LinkButton ID="ClinicalButton" runat="server" OnClick="ClinicalButton_Click">Clinical</asp:LinkButton>
+        </p>
+    </form>
+</body>
+</html>
