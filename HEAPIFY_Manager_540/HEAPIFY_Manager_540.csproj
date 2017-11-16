@@ -213,6 +213,7 @@
     <Compile Include="Controllers\InsurancesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MaritalStandingsController.cs" />
+    <Compile Include="Controllers\MedicalAdminController.cs" />
     <Compile Include="Controllers\ModifiesController.cs" />
     <Compile Include="Controllers\NotesMedicalStaffsController.cs" />
     <Compile Include="Controllers\OccupationsController.cs" />
@@ -634,6 +635,7 @@
     <Content Include="Views\Vitals\Details.cshtml" />
     <Content Include="Views\Vitals\Edit.cshtml" />
     <Content Include="Views\Vitals\Index.cshtml" />
+    <Content Include="Views\MedicalAdmin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

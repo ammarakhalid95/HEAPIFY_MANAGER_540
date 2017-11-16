@@ -13,6 +13,7 @@
     <div class="form-horizontal">
         <h4>Patient</h4>
         <hr />
+
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -43,16 +44,21 @@
             <div class="col-md-10">
                 @Html.DropDownList("AddressID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.AddressID, "", new { @class = "text-danger" })
+                @Html.ActionLink("Address", "Create", "Address", new { area = "" })
+                
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PhoneNumberID, "PhoneNumberID", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.PhoneNumber, "Phone Number", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
+                @*@Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })*@
                 @Html.DropDownList("PhoneNumberID", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.PhoneNumberID, "", new { @class = "text-danger" })
             </div>
         </div>
+
+       
 
         <div class="form-group">
             @Html.LabelFor(model => model.MaritalStatusID, htmlAttributes: new { @class = "control-label col-md-2" })
